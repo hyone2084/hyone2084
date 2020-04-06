@@ -1,0 +1,110 @@
+body {
+  background: radial-gradient(#353535, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CircleLine {
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.CircleLine > a {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: solid 1.3px #2ca6a2;
+  border-radius: 50%;
+  -webkit-transition: margin-top .5s ease-in 0s, margin-left .5s ease-in 0s;
+  transition: margin-top .5s ease-in 0s, margin-left .5s ease-in 0s;
+  font-size: 25px;
+  color: #2ca6a2;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: .9;
+}
+
+.CircleLine > a:hover {
+  opacity: 1;
+}
+
+.CircleLine:hover .SocialConnect-1 {
+  margin-top: 94.93671px;
+  margin-left: 285.71429px;
+}
+
+.CircleLine:hover .SocialConnect-2 {
+  margin-top: 214.28571px;
+  margin-left: 214.28571px;
+}
+
+.CircleLine:hover .SocialConnect-3 {
+  margin-top: 285.71429px;
+  margin-left: 94.93671px;
+}
+
+.CircleLine:hover .SocialConnect-4 {
+  margin-top: 94.93671px;
+  margin-left: -285.71429px;
+}
+
+.CircleLine:hover .SocialConnect-5 {
+  margin-top: 214.28571px;
+  margin-left: -214.28571px;
+}
+
+.CircleLine:hover .SocialConnect-6 {
+  margin-top: 285.71429px;
+  margin-left: -94.93671px;
+}
+
+Space {
+  z-index: 2;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.MyPic {
+  position: fixed;
+  z-index: 2;
+  height: 400px;
+  width: 400px;
+  background-image: url("../img/MyPic.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 3px #2ca6a2;
+  opacity: .95;
+}
+
+.MyPic:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

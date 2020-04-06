@@ -1,0 +1,101 @@
+$radius: 600px;
+
+$move-2: $radius/2/1.40;
+$move-1: $radius/2/3.16;
+$move-3: $radius/2/1.05;
+
+body {
+    background : radial-gradient(#353535 ,black);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.CircleLine {
+    height: $radius + 100px;
+    width: $radius + 100px;
+    border-radius: 50%;
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.CircleLine > a {
+    position: fixed;
+
+    height: 50px;
+    width: 50px;
+    background-color: white; 
+    border: solid 1.3px #2ca6a2;
+    border-radius: 50%;
+
+    transition: margin-top .5s ease-in 0s, margin-left .5s ease-in 0s;
+    font-size: 25px;
+    color: #2ca6a2;
+    text-decoration: none;
+
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+    opacity: .9;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+@each $j in 0, 3 {
+    $r:1;
+    @if($j == 3){
+        $r: -1;
+    }
+
+    @for $i from 1 through 3 {
+        .CircleLine:hover .SocialConnect-#{$i + $j}{
+            @if($i == 1){
+                margin-top: $move-1;
+                margin-left: $move-3 * $r;
+            }
+
+            @if($i == 2){
+                margin-top: $move-2;
+                margin-left: $move-2 * $r;
+            }
+
+            @if($i == 3){
+                margin-top: $move-3;
+                margin-left: $move-1 * $r;
+            }
+        }
+    }
+}
+
+.Space{
+    z-index: 2;
+    height: $radius - 200px;
+    width: $radius - 200px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.MyPic {
+    position: fixed;
+    z-index: 2;
+    height: $radius - 200px;
+    width: $radius - 200px;
+    
+    background-image: url("../img/MyPic.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 3px #2ca6a2;
+    opacity: .95;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+
+

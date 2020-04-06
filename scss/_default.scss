@@ -1,0 +1,37 @@
+/*
+$move: $x * 2;
+$move-1: $x * 1;
+$move-2: $x * 2.64;
+
+$move: $radius/2/1.4;
+$move-1: $radius/2/3.16;
+$move-2: $radius/2/1.05;
+
+2.64
+94.93671px
+106.06px
+$radius: 600px;
+$x: 106.06px;
+$i: 1;
+
+@for from 1 through 3 {
+    SocialConnect-#{} {
+        margin-top: $x * i;
+        margin-left: $x * (4-i); 
+    }
+}
+
+
+
+
+    &:hover .SocialConnect-1{
+        margin-top: $move;
+        margin-left: $move; 
+    
+        background-color: black;
+    }
+
+
+
+
+*/
