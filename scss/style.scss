@@ -30,7 +30,7 @@ body {
     border: solid 1.3px #2ca6a2;
     border-radius: 50%;
 
-    transition: margin-top .5s ease-in 0s, margin-left .5s ease-in 0s;
+    transition: margin-top .7s ease-in-out 0s, margin-left .7s ease-in-out 0s;
     font-size: 25px;
     color: #2ca6a2;
     text-decoration: none;
@@ -39,10 +39,9 @@ body {
         justify-content: center;
         align-items: center;
 
-    opacity: .9;
-
     &:hover{
-        opacity: 1;
+        background-color: #2ca6a2;
+        color: white;
     }
 }
 
